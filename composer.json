@@ -1,0 +1,37 @@
+{
+    "name": "cysha/casino-bot-bindings",
+    "description": "Bot Bindings for Cysha/Casino",
+    "license": "MIT",
+    "authors": [
+        { "name": "xLink (Dan Aldridge)", "email": "xLink@cybershade.org" },
+        { "name": "Jesus (Daniel Noel-Davies)", "email": "Daniel@noeldavi.es" }
+    ],
+    "require": {
+        "php": "^7.0",
+        "cysha/casino": "dev-master",
+        "cysha/casino-holdem": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cysha\\Casino\\Bot\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Cysha\\Casino\\Holdem\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../casino"
+        },
+        {
+            "type": "path",
+            "url": "../casino-holdem"
+        }
+    ]
+}
